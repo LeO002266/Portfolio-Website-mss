@@ -1,0 +1,230 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply a background gradient animation to the body */
+body {
+    background: linear-gradient(to bottom, #2f3640, #566573);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Style the header with animation and background color */
+.header {
+    background-color: rgba(30, 39, 46, 0.9); /* Slightly transparent background */
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out, backgroundFadeIn 2s ease-in-out; /* Animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundFadeIn {
+    0% {
+        background-color: rgba(30, 39, 46, 0);
+    }
+    100% {
+        background-color: rgba(30, 39, 46, 0.9);
+    }
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.header p {
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+    background: linear-gradient(to bottom, #f1c40f, #e67e22);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out; /* Animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style the project containers */
+.project {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f1f2f6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out; /* Animation */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add a scale-up animation on hover for project containers */
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #555;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style the project buttons with animation */
+.project a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Style the footer */
+footer {
+    background-color: rgba(30, 39, 46, 0.9); /* Slightly transparent background */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    animation: fadeInUp 1s ease-in-out; /* Animation */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Style the contact section */
+#contact {
+    padding: 40px;
+    background: linear-gradient(to bottom, #f1c40f, #e67e22);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the icons */
+#contact a i {
+    font-size: 1.5rem; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add some spacing between the icon and text */
+    color: #ffffff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add more animation to the contact section links */
+#contact a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
